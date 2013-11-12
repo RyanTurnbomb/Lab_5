@@ -22,22 +22,27 @@ unsigned char initPlayer();
 //
 // Prints the player marker (*) at the player location passed in.
 //
-void printPlayer(unsigned char player);
+void printPlayer(unsigned char PLAYER);
 
 //
 // Clears the location passed in.
 //
-void clearPlayer(unsigned char player);
+void clearPlayer(unsigned char PLAYER);
 
 //
 // Given a player's current position and a direction, returns an updated player position.
 //
-unsigned char movePlayer(unsigned char player, unsigned char direction);
+unsigned char movePlayer(unsigned char PLAYER, unsigned char direction);
 
 //
 // Returns true if the position passed in is the winning game position.
 //
-char didPlayerWin(unsigned char player);
+unsigned char didPlayerMove(unsigned char PLAYER);
+
+//
+// Checks if player moved
+//
+char didPlayerWin(unsigned char PLAYER);
 
 /*
  * Functions which may prove useful in achieving A-Functionality.
